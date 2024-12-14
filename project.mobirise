@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "Tensor",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#ffffff",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#111314"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/favicon.ico",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://nft-tensor.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://nft-tensor.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "i9ws2ipirt",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Tensor | Solana's Leading NFT Marketplace",
+        "meta_descr": "Tensor is the #1 NFT Marketplace on Solana. Backed by Placeholder VC, Solana Ventures, and Solana founders Toly and Raj.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/tensor.png\" alt=\"Tensor\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uwUFf3Kqqt",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#111314\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#111314\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Tensor NFT: Bridging Art and Technology in the Digital Age</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The rise of non-fungible tokens (NFTs) has transformed the way we perceive art, ownership, and digital assets. Among the various platforms and technologies facilitating this revolution, Tensor NFT stands out as a pioneering force. By combining innovative blockchain technology with a user-friendly interface, <a href=\"https://nft-tensor.github.io/\" class=\"text-primary\"><b>Tensor NFT</b></a> is reshaping the landscape of digital art and collectibles. In this blog, we will explore what Tensor NFTs are, how they work, their significance in the digital economy, and the future potential they hold for artists, collectors, and the broader community.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Tensor NFT?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://www.tensor.trade\" class=\"text-primary\"><b>Tensor NFT</b></a> refers to a specific implementation of non-fungible tokens that leverage the Tensor framework, designed to enhance the creation, trading, and management of digital assets. Unlike traditional cryptocurrencies like Bitcoin or Ethereum, which are fungible and interchangeable, NFTs are unique digital certificates of ownership for specific items, whether they be digital art, music, videos, or virtual real estate.<br><br><b>Key Characteristics of Tensor NFTs</b><br><b>1.Uniqueness:</b> Each Tensor NFT has distinct properties, making it one-of-a-kind. This uniqueness is secured through blockchain technology, which verifies ownership and provenance.<br><b>2.Indivisibility:</b> Unlike cryptocurrencies, NFTs cannot be divided into smaller units. A Tensor NFT exists as a whole, allowing for clear ownership and trade.<br><b>3.Interoperability:</b> Built on blockchain standards like ERC-721 or ERC-1155, Tensor NFTs can be easily traded across various platforms and marketplaces.<br><b>4.Programmability:</b> Tensor NFTs can incorporate smart contracts, enabling creators to set royalties, permissions, and other conditions for the use and resale of their digital assets.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Technology Behind Tensor NFTs</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Blockchain Fundamentals</b><br>At the core of Tensor NFTs lies blockchain technology. Blockchains are decentralized ledgers that record transactions across a network of computers. This decentralization ensures transparency, security, and immutability, making it impossible to alter or counterfeit ownership records.<br><br><b>Smart Contracts</b><br>Tensor NFTs utilize smart contracts—self-executing contracts with the terms of the agreement directly written into code. Smart contracts facilitate the automatic execution of transactions, ensuring that creators receive royalties each time their work is resold. This feature is a game-changer for artists, providing a continuous revenue stream and protecting their intellectual property.<br><br><b>Tensor Framework</b><br>The Tensor framework enhances the NFT experience by offering tools and features that simplify the creation, management, and trading of NFTs. Through this framework, artists can easily mint their works as NFTs, manage their collections, and engage with their audience.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Tensor NFTs Work</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Minting Process</b><br>The process of creating a Tensor NFT, known as minting, involves converting a digital file (such as an image, video, or audio) into a unique token on the blockchain. Here’s a step-by-step breakdown of the minting process:<br><br><b>Choose a Digital Asset:</b> The creator selects the digital file they wish to convert into an NFT.<br><b>Select a Marketplace:</b> Creators choose a platform that supports Tensor NFTs. Many marketplaces have integrated Tensor technology to facilitate easy minting and trading.<br><b>Create a Wallet:</b> To mint a Tensor NFT, the creator must have a cryptocurrency wallet compatible with the chosen blockchain (e.g., Ethereum).<br><b>Upload the Asset:</b> The creator uploads the digital file to the marketplace and fills in metadata, including the title, description, and any additional attributes.<br><b>Mint the NFT:</b> Once the details are set, the creator initiates the minting process, which involves paying a gas fee to record the NFT on the blockchain. Upon completion, the NFT is created and stored in the creator's wallet.<br><br><b>2. Trading and Ownership</b><br>After minting, Tensor NFTs can be listed for sale on various marketplaces. Buyers can browse through collections, place bids, or purchase NFTs directly. Ownership is transferred through blockchain transactions, which are recorded and can be verified by anyone.<br><br><b>3. Royalties and Resales</b><br>One of the most attractive features of Tensor NFTs is the ability to program royalties into the smart contract. This means that creators can receive a percentage of sales every time their NFT is resold, ensuring that artists benefit from the increasing value of their work over time.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Importance of Tensor NFTs</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Empowering Artists<br></b>Tensor NFTs provide artists with a new avenue for monetizing their work. By eliminating intermediaries like galleries and auction houses, creators can sell directly to collectors, retaining a larger portion of the profits. This democratization of art sales empowers artists, especially emerging talents who may struggle to gain recognition in traditional art markets.<br><br><b>2. New Forms of Creativity<br></b>The NFT space encourages innovation, allowing artists to experiment with new formats, such as interactive art, generative pieces, and virtual reality experiences. Tensor NFTs enable creators to push the boundaries of traditional art, fostering a culture of creativity and exploration.<br><br><b>3. Building Community<br></b>Tensor NFTs facilitate direct engagement between artists and collectors, creating communities around shared interests. Artists can communicate with their audience through social media and platforms, offering exclusive content, behind-the-scenes access, and limited editions that deepen the connection with their fans.<br><br><b>4. Preservation of Digital Culture<br></b>As digital art becomes increasingly prevalent, Tensor NFTs serve as a means of preserving digital culture. By creating verifiable records of ownership and provenance, NFTs ensure that digital works are recognized and valued, contributing to the historical documentation of our digital age.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges Facing Tensor NFTs</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Environmental Concerns</b><br>The minting and trading of NFTs can have significant environmental impacts due to the energy-intensive nature of blockchain transactions, particularly on networks like Ethereum. However, many platforms are exploring solutions, such as transitioning to more energy-efficient consensus mechanisms and utilizing layer-2 solutions to reduce carbon footprints.<br><br><b>2. Market Speculation</b><br>The NFT market has been characterized by volatility and speculation, with some pieces selling for astronomical prices while others fail to gain traction. This unpredictability can deter potential buyers and investors who may be wary of market bubbles.<br><br><b>3. Intellectual Property Issues</b><br>The ease of minting NFTs also raises concerns about copyright infringement. Some individuals have minted works without permission, leading to disputes over ownership. It is essential for creators to understand their rights and for platforms to implement measures that protect intellectual property.<br><br><b>4. Accessibility and User Experience</b><br>While the technology behind Tensor NFTs offers immense potential, the user experience can be complex for newcomers. Simplifying the onboarding process and providing educational resources will be crucial for expanding the NFT community and ensuring broader participation.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Tensor NFTs</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Integration with Traditional Art Markets</b><br>As the NFT market matures, there is potential for integration with traditional art markets. Galleries and auction houses are beginning to embrace NFTs, offering hybrid models that combine physical and digital assets. This convergence could open new avenues for artists and collectors alike.<br><br><b>2. Enhanced Interactivity</b><br>Future developments in Tensor NFTs may focus on enhancing interactivity and engagement. Imagine an NFT that evolves over time or responds to user interactions, creating a dynamic experience that transcends static art forms.<br><br><b>3. Broader Adoption Across Industries</b><br>The principles of NFTs can extend beyond art into various industries, including music, gaming, real estate, and education. Tensor NFTs can facilitate unique experiences in these fields, enabling new business models and revenue streams.<br><br><b>4. Legal Frameworks and Standards</b><br>As the NFT ecosystem grows, the establishment of legal frameworks and industry standards will become increasingly important. Clear guidelines around ownership, copyright, and royalties will help build trust within the community and protect the rights of creators and collectors.<br><br><b>5. Community-Driven Initiatives</b><br>The future of Tensor NFTs will likely involve increased participation from communities. Decentralized autonomous organizations (DAOs) and community-driven projects can empower users to collaborate and curate collections, fostering a sense of ownership and shared responsibility.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Tensor NFTs represent a transformative intersection of art and technology, offering unprecedented opportunities for creators and collectors in the digital age. By leveraging blockchain technology, Tensor NFTs empower artists to monetize their work, engage with their audience, and preserve digital culture.<br><br>While challenges remain, the potential for growth and innovation in the NFT space is immense. As we move forward, embracing the principles of transparency, community, and creativity will be essential for navigating the evolving landscape of digital assets. Whether you are an artist, collector, or enthusiast, Tensor NFTs offer a thrilling glimpse into the future of art and ownership in our increasingly digital world.<br><br>As this space continues to evolve, the possibilities for Tensor NFTs are boundless, promising a rich tapestry of creativity and connection that will define the next era of digital expression.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uwUFfooacf",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
